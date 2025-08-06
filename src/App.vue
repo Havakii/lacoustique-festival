@@ -55,7 +55,7 @@ export default {
 <style>
 .bg-program {
   height: 185vh;
-  background: url(public/background4.png);
+  background: url(/background4.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,7 +63,7 @@ export default {
 
 .bg-about {
   height: 100vh;
-  background: url(public/background.png);
+  background: url(/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -71,7 +71,7 @@ export default {
 
 .bg-info {
   height: 130vh;
-  background: url(public/background.png);
+  background: url(/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
