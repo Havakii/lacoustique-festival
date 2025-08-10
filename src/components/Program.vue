@@ -74,7 +74,7 @@ export default {
                     { time: '21h00', title: 'Cinélot sous les étoiles : “L\'envolée sauvage” (1h50) + court “Mamie, le soleil et la pluie”' }
                 ],
                 '2025-08-30': [
-                    { time: '08h00', title: 'Vide-greniers & vide-dressing en fanfare – LA GRANJA (jusqu’à 17h)' },
+                    { time: '08h00-17h00', title: 'Vide-greniers & vide-dressing en fanfare – LA GRANJA' },
                     { time: '11h00', title: 'Balade cueillette de plantes sauvages (1h / 3,5km) – Claire Mauquié' },
                     { time: '12h00', title: 'Grand buffet anti-gaspi avec les chef.fes de l’asso' },
                     { time: '14h00', title: 'Atelier linogravure – Matière Grasse & La Tresse' },
