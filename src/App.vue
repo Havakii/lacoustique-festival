@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Navbar @navigate="setCurrentComponent" />
+    <Navbar @navigate="setCurrentComponent"/>
   </div>
   <header :class="backgroundClass">
     <component :is="currentComponent" />
@@ -13,6 +13,7 @@ import Program from './components/Program.vue'
 import Information from './components/Info.vue'
 import Home from './components/Home.vue'
 import About from './components/About.vue'
+import newNavbar from './components/newNavbar.vue'
 
 export default {
   components: {
@@ -33,7 +34,7 @@ export default {
         case 'Program':
           return 'bg-program'
         case 'Home':
-          return 'bg-about'
+          return 'bg-home'
         case 'Information':
           return 'bg-info'
         case 'About':
@@ -77,6 +78,14 @@ export default {
   background-position: center;
 }
 
+.bg-home {
+  height: 100vh;
+  background: url(/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /* Tablets (max-width: 1024px) */
 @media (max-width: 800px) {
   header {
@@ -87,10 +96,28 @@ export default {
 
 
 /* Small phones (max-width: 480px) */
-@media (max-width: 400px) {
-  header {
-    height: 170vh;
-    background-position: -400px;
+@media (max-width: 450px) {
+  .bg-home {
+    background-position: -300px;
+  }
+  .bg-program {
+    height: auto;
+  }
+  .bg-about {
+    height: auto;
+  }
+  .bg-info {
+    height: auto;
   }
 }
+
+@media (max-width: 380px) {
+
+  .bg-home {
+    background-position: -200px;
+  }
+  
+}
+
+
 </style>

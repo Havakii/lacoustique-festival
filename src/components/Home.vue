@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center pt-16 ">
-    <div class="text-center pt-10">
+    <div class="text-center">
       <div v-for="(item, index) in about" :key="index" class="festival-title">
         <h2 class="text-3xl font-bold mb-2 custom-font pt-12">{{ item.title }}</h2>
         <p class="text-2xl font-semibold">{{ item.date }}</p>
@@ -49,8 +49,12 @@ export default {
   font-family: 'hamurz', sans-serif;
   font-size: 60px;
 }
+
+.festival-title {
+  padding-top: 50px;
+}
 .font-festival {
-  padding-top: 130px;
+  padding-top: 150px;
   font-family: 'Oswald';
   letter-spacing: 1px;
   font-size: 24px;
@@ -62,29 +66,34 @@ export default {
 /* Tablets (max-width: 1024px) */
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .festival-title {
-    padding-top: 100px;
+    padding-top: 120px;
   }
 
-  .font-festival {
-      padding-top: 300px;
+  .font-festival{
+      padding: 20px;
+      padding-top: 250px;
   }
 
-  .festival-artists {
-    padding-top: 1000px;
+}
+
+@media (max-width: 600px) {
+  .festival-title {
+    padding-top: 50px;
   }
 }
 
 
 /* Small phones (max-width: 480px) */
 @media (max-width: 400px) {
-.festival-title {
-    padding-top: 100px;
+  .festival-title {
+      padding-top: 20px;
+    }
+.font-festival {
+    padding-top: 140px;
   }
 
-  .festival-artists {
-    padding-top: 100px;
-  }
+
 }
 </style>
