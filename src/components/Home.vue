@@ -79,6 +79,9 @@ export default {
 }
 
 @media (max-width: 600px) {
+  .custom-font {
+      line-height: 1;
+  }
   .festival-title {
     padding-top: 50px;
   }

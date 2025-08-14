@@ -98,7 +98,7 @@ export default {
 /* Small phones (max-width: 480px) */
 @media (max-width: 450px) {
   .bg-home {
-    background-position: -300px;
+    background-position: -270px;
   }
   .bg-program {
     height: auto;
